@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet" />
+        <style>
+
+            a{
+                text-decoration: none;
+            }
+            a,h2,h1{
+                font-family:'Verdana';
+            }
+            body{
+                background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #c98bff 0%, #edff2b 52%, #2bdfff 90%);
+
+
+            }
+            </style>
+        </style>
+    </head>
+    <body>
+        <header class="header_section">
+            <div class="header_bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="full">
+                      <nav class="navbar navbar-expand-lg custom_nav-container">
+                        <a class="navbar-brand " href="index.html"><img width="120" src="griet.png" alt="" /></a>
+      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class=""> </span>
+                        </button>
+      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html"><h4>Home </h4><span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="dalgorithms.html"><h4>Algorithms</h4></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+<h1><center> <b><strong>SHORTEST SEEK TIME FIRST(SSTF)</strong></b></center></h1><br><br>
+<h3><center>Shortest Seek Time First (SSTF) is a disk scheduling algorithm used in operating systems to efficiently manage disk I/O operations. The goal of SSTF is to minimize the total seek time required to service all the disk access requests.<br><br> In SSTF, the disk head moves to the request with the shortest seek time from its current position, services it, and then repeats this process until all requests have been serviced. The algorithm prioritizes disk access requests based on their proximity to the current position of the disk head, ensuring that the disk head moves the shortest possible distance to service each request.</center></h3>
+<h3>Example:</b><br><br>Track Range from 0 to 199 and head initially is rested on 50
+    95, 180, 34, 119, 11, 123, 62, 64<br>
+    
+    (THM) = (50 – 0) + (180 – 0) = 230<br>
+    Seek Time = THM * Seek rate = 230 * 5ms<br>
+    Seek Time = 1150 ms<br><br><br>
+<figure><center><img src="dsstf.webp"width="50%"><br><figure>
+<br><br><h3><b><center>Advantages & Disadvantages :</b><br><br></h3>
+    <h3>
+    <center>1. The average time taken for response is reduced<br>
+        2. Many processes can be processed<br>
+        3. An increase in throughput<br><br>
+        The following are the disadvantages of SSTF scheduling algorithm:<br>      
+        1. Starvation<br>
+        2. Different time is taken for different responses<br>
+        3. Overhead<br><br>
+<center><a href="salgo.html"><b></b><h2><b>SIMULATE</a><br><br><br>
+</body>
+</html>

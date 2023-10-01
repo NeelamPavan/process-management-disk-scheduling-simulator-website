@@ -1,0 +1,66 @@
+<html>
+    <head>
+  <title>Algorithms</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet" />
+        <style>
+
+            a{
+                text-decoration: none;
+            }
+            a,h2,h1{
+                font-family:'Verdana';
+            }
+            body{
+                background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+
+            }
+            </style>
+    
+    </head>
+    <body>
+        <header class="header_section">
+            <div class="header_bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="full">
+                      <nav class="navbar navbar-expand-lg custom_nav-container">
+                        <a class="navbar-brand " href="index.html"><img width="120" src="griet.png" alt="" /></a>
+      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class=""> </span>
+                        </button>
+      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html"><h4>Home </h4><span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="algorithms.html"><h4>Algorithms</h4></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+<h1><center><b><strong>FIRST IN FIRST OUT (FIFO) ALGORITHM</strong></center></h1><br><br>
+<center><h3>This is the first basic algorithm of Page Replacement Algorithms. This algorithm is basically dependent on the number of frames used. Then each frame takes up the certain page and tries to access it. When the frames are filled then the actual problem starts. The fixed number of frames is filled up with the help of first frames present. This concept is fulfilled with the help of Demand Paging.<br><br>This algorithm replaces the oldest page in memory when a page fault occurs. It keeps track of all pages in memory in a queue and when a page fault occurs, the page at the front of the queue is removed and a new page is added to the back of the queue.</h2><br><br>
+<figure><center><img src="fifoflow.jpg"width="30%"><figcaption><br><br><b><font face='verdana'>Flow Chart of FIFO</font></figcaption><br><figure>
+<br><figure><center><img src="fifoex.jpg"width="70%"><figcaption><br><br><b><font face='verdana'>Example of FIFO</font></figcaption></figure></center><br><br><h1><center><b>Advantages & Disadvantages :</b><br><br></h1><h3>The main advantage of the FIFO page replacement algorithm is its simplicity. It is easy to understand and implement. It also uses a queue data structure. The number of operations is limited in a queue makes the implementation simple.
+
+Let’s talk about some disadvantages now. When the number of incoming pages is large, it might not provide excellent performance.
+
+When we increase the number of frames or capacity to store pages in the queue, it should give us less number of page faults. Sometimes FIFO may behave abnormally, and it may increase the number of page faults. This behavior of FIFO is called Belady’s anomaly.
+
+In FIFO, the system should keep track of all the frames. Sometimes it results in slow process execution.</h3></figure></center></h2>
+<center><br><br><a href="fifo.html"><h2><b>SIMULATE</a><br><br><br>
+</body>
+</html>

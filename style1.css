@@ -1,0 +1,104 @@
+/*h1.page-title {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 20px;
+}*/
+
+.inputs input {
+    padding-left: 4px;
+    margin: 10px;
+}
+
+/* .algorithm-input div.btn-group {
+    width: 500px;
+} */
+
+input#inputHeadPos {
+    display: inline;
+    width: 50px;
+}
+
+canvas#canvas {
+    margin-top: 20px;
+}
+
+div.algorithm-input {
+    margin-bottom: 10px;
+}
+
+div.start-input div {
+    display: inline;
+}
+
+div.btnVisualizeContainer{
+    float: right;
+    margin-right: 126px;
+}
+
+input#inputNumbers {
+    display: inline;
+    width: 200px;
+}
+
+div.pageContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 880px;
+}
+
+div#errorMessage {
+    margin-top: 10px;
+}
+
+/*  */
+/* Google Fonts */
+
+/* Global */
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 18em;
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 8s steps(20) 1.5s infinite ,
+                blinkTextCursor 500ms steps(20) infinite ;
+                /* normal both */
+
+}
+/* @keyframes typewriter{
+  from{width: 0;}
+  to{width: 445px;}
+} */
+
+
+
+@keyframes typewriter {
+  0% { width:0 }
+  25% { width: 20% }
+  48% { width: 45% }
+  50% { width: 55% }
+  55% { width: 65% }
+  60% { width: 72% }
+  65% { width: 72% }
+  70% { width: 65% }
+  75% { width: 55%; }
+  80% { width: 45% }
+  85% { width: 20%; }
+  100% { width: 0; }
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

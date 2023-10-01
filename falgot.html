@@ -1,0 +1,80 @@
+<html>
+    <head>
+  <title>Algorithms</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet" />
+        <style>
+
+            a{
+                text-decoration: none;
+            }
+            a,h2,h1{
+                font-family:'Verdana';
+            }
+            body{
+                background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+
+            }
+            </style>
+    
+    </head>
+    <body>
+        <header class="header_section">
+            <div class="header_bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="full">
+                      <nav class="navbar navbar-expand-lg custom_nav-container">
+                        <a class="navbar-brand " href="index.html"><img width="120" src="griet.png" alt="" /></a>
+      
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class=""> </span>
+                        </button>
+      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html"><h4>Home </h4><span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="dalgorithms.html"><h4>Algorithms</h4></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+<h1><center><b><strong>FIRST COME FIRST SERVE(FCFS)</strong></center></h1><br><br>
+<center><h3>FCFS (First-Come, First-Served) Disk Scheduling Algorithm is a simple and easy-to-implement algorithm used in operating systems to manage input/output (I/O) requests from processes to access disk blocks.<br> <br>In this algorithm, the operating system processes the I/O requests in the order in which they arrive in the queue, without any reordering or prioritization.<br><br>
+
+    When a process generates an I/O request, it is added to the end of the queue, and the operating system services the requests in the same order. <br><br>The requests are serviced one by one until the entire queue is empty. This algorithm has the advantage of being fair, predictable, and requiring low overhead. <br><br>However, it also has limitations, such as long waiting times for requests that arrive later and potential starvation of requests that are stuck behind long-running requests. FCFS may not be suitable for systems with a high volume of I/O requests or where requests have different priorities.<br><br><br><b></center><h3>Example:</b><br><br>Track Range from 0 to 199 and head initially is rested on 50<br>
+
+95, 180, 34, 119, 11, 123, 62, 64<br>
+
+First the head from 50 goes to 95 then→95→180→34→119→11→123→62→64<br>
+
+Total Head Movement Computation: (THM)<br>
+
+(95 – 50) + (180 – 95) + (180-34) + (119-34) + (119-11) + (123-11) + (123-62) + (64-62)<br><br></h3>
+<figure><center><img src="dfcfs.webp"width="50%"></font><br><br><br><br>
+    <h3><center><b>Advantages & Disadvantages:</b></center><br><br>1.Simple<br>
+        2.Not complex<br>
+        3. Easy to implement<br>
+        4. No starvation<br>
+        5. Low overhead<br><br>
+
+        The following are the disadvantages of FCFS scheduling algorithm:<br><br>
+        
+        1. No preemption possible<br>
+        2. Low throughput<br>
+        3. Best services may not be delivered<br></h3>
+    <center><br><br><a href="falgo.html"><h2><b>SIMULATE</a><br><br><br>
+</body>
+</html>

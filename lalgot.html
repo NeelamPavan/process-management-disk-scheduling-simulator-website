@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/style.css" rel="stylesheet" />
+        <style>
+            a{
+                text-decoration: none;
+            }
+            a,h1,h2{
+                font-family:'Verdana';
+            }
+            body{
+                background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #de8bff 0%, #2b87ff 52%, #ff2b2b 90%);
+
+
+            }
+            </style>
+        </style>
+    </head>
+    </head>
+<body>
+    <header class="header_section">
+        <div class="header_bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="full">
+                  <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand " href="index.html"><img width="120" src="griet.png" alt="" /></a>
+  
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class=""> </span>
+                    </button>
+  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html"><h4>Home </h4><span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="dalgorithms.html"><h4>Algorithms</h4></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+<h1><center><b><strong>LOOK ALGORITHM</strong></center></h1></b></h1><br><br>
+<h3><center>The LOOK disk scheduling algorithm is a variation of the SCAN algorithm for disk scheduling.<br><br> It is used to reduce the amount of time it takes to access data on a hard disk drive by minimizing the seek time between read/write operations.<br><br> The LOOK algorithm operates by scanning the disk in a specific direction, but instead of going all the way to the end of the disk before reversing direction like the SCAN algorithm, it reverses direction as soon as it reaches the last request in the current direction.<br><br><br></center><b>Example :</b><br><br>In our case 11 and 180 are the last services.<br>
+
+    (THM) = (50-11) + (180-11) = 39 + 169 = 208<br>
+    
+    (THM) = 208 tracks<br>
+    
+    Seek Time = THM * Seek rate = 208 * 5ms<br>
+    
+    Seek Time = 1040 ms<br><br<br></h3>
+    <figure><center><img src="dlook.webp"width="50%"></font><br><br><br><br>
+        <h3><center><b>Advantages & Disadvantages:</b></center><br><br>
+            1. It does not cause the head to move till the ends of the disk when there are no requests to be serviced.<br>
+2. It provides better performance as compared to the SCAN Algorithm.<br>
+3. It does not lead to starvation.<br><br>
+The Following are the Disadvantages:<br><br>
+1. There is an overhead of finding the end requests.<br><br>
+2. It causes a long waiting time for the cylinders just visited by the head.<br><br><br>
+<center><a href="lalgo.html"><h2><b>SIMULATE</a><br><br><br>
+</body>
+</html>

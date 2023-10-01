@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disk Scheduling Algorithm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css1/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link href="//fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="assets/css1/style-starter.css">
+    <script src="script.js"></script>
+    <script src="algorithm.js"></script>
+    <script src="graph.js"></script>
+
+</head>
+
+<body>
+
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                <a class="navbar-brand" href="index.html">
+                    <span class=""></span> <img src="griet.png">
+                </a>
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="dalgorithms.html">ALGORITHMS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+    <div class="inner-banner-algo">
+    </div>
+    <section class="w3l-breadcrumb">
+        <div class="container">
+            <ul class="breadcrumbs-custom-path">
+                <li>
+                    <h2>FIRST COME-FIRST SERVE(FCFS)</h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="pageContainer">
+        <div class="inputs">
+            <div class="algorithm-input">
+                <label for="numbers"><b>Select Algorithm: </label>
+                <div class="btn-group" role="group" aria-label="Basic example">
+
+                    <button onclick="selectAlgo(this);" value="fcfs" type="button" class="btn btn-outline-info">First
+                        Come -First Serve</button>
+                </div>
+            </div>
+            <div class="number-input">
+                <label for="numbers"><b>Enter Sequence: </label>
+                <input type="text" name="numbers" id="inputNumbers" class="form-control">
+                <br>
+            </div>
+            <div class="start-input">
+                <div>
+                    <label for="numbers">Current Head Position: </label>
+                    <input type="text" name="numbers" id="inputHeadPos" class="form-control">
+                </div>
+                <div class="btnVisualizeContainer">
+                    <button onclick="Calculate();" id="btnVisualize" type="button"
+                        class="btn btn-primary">SIMULATE</button>
+                </div>
+            </div>
+            <div id="errorMessage">
+
+            </div>
+            <br>
+        </div>
+        <div class="canvas">
+            <canvas id="canvas" width="1000" height="60"></canvas>
+        </div>
+        <div id="count-output">
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+    <script src="assets/js/theme-change.js"></script>
+
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
