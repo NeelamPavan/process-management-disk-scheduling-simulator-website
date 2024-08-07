@@ -26,3 +26,5 @@ A website where all the needed information about process management and Disk Sch
 ![Screenshot 2023-09-29 220943](https://github.com/NeelamPavan/process-management-disk-scheduling-simulator-website/assets/91205972/edb576c8-2fd8-468f-9038-15ca71272be6)
 
 
+
+
